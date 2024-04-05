@@ -15,7 +15,7 @@ export default function Home() {
     getJoke().then((obj) => {
       setJoke({
         setup: obj.setup,
-        punchline: obj.delivery,
+        delivery: obj.delivery,
       });
       setButton('Get punchline');
     });
