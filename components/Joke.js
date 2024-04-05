@@ -5,7 +5,7 @@ export default function Joke({ joke, btnText }) {
   return (
     <>
       <h1>{joke.setup}</h1>
-      <p>{btnText !== 'Get punchline' ? joke.delivery : ''}</p>
+      {btnText !== 'Get punchline' ? <h3>{joke.delivery}</h3> : ''}
     </>
   );
 }
